@@ -13,13 +13,85 @@
 @end
 
 @implementation AppDelegate
-
+#define SYSTEM_VERSION_LESS_THAN(v) ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedAscending)
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [self registerForRemoteNotification];
+    [self setApplicationBadgeNumber:0];
+    
     return YES;
 }
+#ifdef __IPHONE_8_0
 
+- (BOOL)checkNotificationType:(UIUserNotificationType)type
+{
+    UIUserNotificationSettings *currentSettings = [[UIApplication sharedApplication] currentUserNotificationSettings];
+    
+    return (currentSettings.types & type);
+}
+
+#endif
+- (void)setApplicationBadgeNumber:(NSInteger)badgeNumber
+{
+    UIApplication *application = [UIApplication sharedApplication];
+    
+#ifdef __IPHONE_8_0
+    // compile with Xcode 6 or higher (iOS SDK >= 8.0)
+    
+    if(SYSTEM_VERSION_LESS_THAN(@"8.0"))
+    {
+        application.applicationIconBadgeNumber = badgeNumber;
+    }
+    else
+    {
+        if ([self checkNotificationType:UIUserNotificationTypeBadge])
+        {
+            NSLog(@"badge number changed to %d", badgeNumber);
+            application.applicationIconBadgeNumber = badgeNumber;
+        }
+        else
+            NSLog(@"access denied for UIUserNotificationTypeBadge");
+    }
+    
+#else
+    // compile with Xcode 5 (iOS SDK < 8.0)
+    application.applicationIconBadgeNumber = badgeNumber;
+    
+#endif
+}
+
+- (void)registerForRemoteNotification {
+    if (SYSTEM_VERSION_LESS_THAN(@"8.0")) {
+        [[UIApplication sharedApplication] registerForRemoteNotificationTypes:(UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeSound | UIRemoteNotificationTypeAlert)];
+    } else {
+        UIUserNotificationType types = UIUserNotificationTypeSound | UIUserNotificationTypeBadge | UIUserNotificationTypeAlert;
+        UIUserNotificationSettings *notificationSettings = [UIUserNotificationSettings settingsForTypes:types categories:nil];
+        [[UIApplication sharedApplication] registerUserNotificationSettings:notificationSettings];
+    }
+}
+
+#ifdef __IPHONE_8_0
+- (void)application:(UIApplication *)application didRegisterUserNotificationSettings:(UIUserNotificationSettings *)notificationSettings {
+    [application registerForRemoteNotifications];
+}
+#endif
+
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
+{
+//#if !TARGET_IPHONE_SIMULATOR
+    
+    //NSString *appName = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleDisplayName"];
+    //NSString *appVersion = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"];
+    
+    NSString *devToken = [[[[deviceToken description] stringByReplacingOccurrencesOfString:@"<" withString:@""] stringByReplacingOccurrencesOfString:@">" withString:@""] stringByReplacingOccurrencesOfString:@" " withString:@""];
+    NSLog(@"DEVICE TOKEN : %@", devToken);
+    
+//#endif
+}
+-(void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error{
+    NSLog(@"ERROR : %@",[error debugDescription]);
+}
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
