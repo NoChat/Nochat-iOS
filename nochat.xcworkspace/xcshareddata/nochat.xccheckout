@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>514EE424-E4CB-4A06-BB80-3C7FDFA39748</string>
+	<key>IDESourceControlProjectName</key>
+	<string>nochat</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>B3EA17CF55C92FDBEA0B998024CCD8C8CB1F062E</key>
+		<string>https://github.com/NoChat/Nochat-iOS.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>nochat.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>B3EA17CF55C92FDBEA0B998024CCD8C8CB1F062E</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/NoChat/Nochat-iOS.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>B3EA17CF55C92FDBEA0B998024CCD8C8CB1F062E</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>B3EA17CF55C92FDBEA0B998024CCD8C8CB1F062E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>nochat</string>
+		</dict>
+	</array>
+</dict>
+</plist>

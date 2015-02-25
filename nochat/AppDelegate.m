@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "AGPushNoteView.h"
 @interface AppDelegate ()
 
 @end
@@ -91,6 +91,14 @@
 }
 -(void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error{
     NSLog(@"ERROR : %@",[error debugDescription]);
+}
+
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
+    NSLog(@"푸시 왔음 : %@", userInfo);
+    [AGPushNoteView showWithNotificationMessage:[[userInfo objectForKey:@"aps"] objectForKey:@"alert"] ];
+    [AGPushNoteView setMessageAction:^(NSString *message) {
+        
+    }];
 }
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

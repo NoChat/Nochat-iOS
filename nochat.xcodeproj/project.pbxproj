@@ -16,6 +16,8 @@
 		CD7FB76E1A9B99B200F2B168 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD7FB76D1A9B99B200F2B168 /* Images.xcassets */; };
 		CD7FB7711A9B99B200F2B168 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD7FB76F1A9B99B200F2B168 /* LaunchScreen.xib */; };
 		CD7FB77D1A9B99B200F2B168 /* nochatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7FB77C1A9B99B200F2B168 /* nochatTests.m */; };
+		CDF7887A1A9D8BD500A3AB7E /* AGPushNoteView.m in Sources */ = {isa = PBXBuildFile; fileRef = CDF788781A9D8BD500A3AB7E /* AGPushNoteView.m */; };
+		CDF7887B1A9D8BD500A3AB7E /* AGPushNoteView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDF788791A9D8BD500A3AB7E /* AGPushNoteView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,9 @@
 		CD7FB7761A9B99B200F2B168 /* nochatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = nochatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD7FB77B1A9B99B200F2B168 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD7FB77C1A9B99B200F2B168 /* nochatTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = nochatTests.m; sourceTree = "<group>"; };
+		CDF788771A9D8BD500A3AB7E /* AGPushNoteView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGPushNoteView.h; sourceTree = "<group>"; };
+		CDF788781A9D8BD500A3AB7E /* AGPushNoteView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGPushNoteView.m; sourceTree = "<group>"; };
+		CDF788791A9D8BD500A3AB7E /* AGPushNoteView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AGPushNoteView.xib; sourceTree = "<group>"; };
 		D6572F0DAC174AA0BC505D1B /* libPods-nochat.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-nochat.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -97,6 +102,7 @@
 		CD7FB75C1A9B99B200F2B168 /* nochat */ = {
 			isa = PBXGroup;
 			children = (
+				CDF788751A9D8BD500A3AB7E /* Vendor */,
 				CD7FB7611A9B99B200F2B168 /* AppDelegate.h */,
 				CD7FB7621A9B99B200F2B168 /* AppDelegate.m */,
 				CD7FB7671A9B99B200F2B168 /* ViewController.h */,
@@ -134,6 +140,24 @@
 				CD7FB77B1A9B99B200F2B168 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CDF788751A9D8BD500A3AB7E /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				CDF788761A9D8BD500A3AB7E /* AGPushNote */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		CDF788761A9D8BD500A3AB7E /* AGPushNote */ = {
+			isa = PBXGroup;
+			children = (
+				CDF788771A9D8BD500A3AB7E /* AGPushNoteView.h */,
+				CDF788781A9D8BD500A3AB7E /* AGPushNoteView.m */,
+				CDF788791A9D8BD500A3AB7E /* AGPushNoteView.xib */,
+			);
+			path = AGPushNote;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +244,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDF7887B1A9D8BD500A3AB7E /* AGPushNoteView.xib in Resources */,
 				CD7FB76C1A9B99B200F2B168 /* Main.storyboard in Resources */,
 				CD7FB7711A9B99B200F2B168 /* LaunchScreen.xib in Resources */,
 				CD7FB76E1A9B99B200F2B168 /* Images.xcassets in Resources */,
@@ -277,6 +302,7 @@
 				CD7FB7631A9B99B200F2B168 /* AppDelegate.m in Sources */,
 				CD7FB7691A9B99B200F2B168 /* ViewController.m in Sources */,
 				CD7FB7601A9B99B200F2B168 /* main.m in Sources */,
+				CDF7887A1A9D8BD500A3AB7E /* AGPushNoteView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
