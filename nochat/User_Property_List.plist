@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>phone_number</key>
+	<string></string>
+	<key>api_token</key>
+	<string></string>
+	<key>locale</key>
+	<string></string>
+	<key>os</key>
+	<string></string>
+	<key>device_token</key>
+	<string></string>
+	<key>user_pwd</key>
+	<string></string>
+	<key>user_id</key>
+	<string></string>
+	<key>serverURL</key>
+	<string>http://todaytrend.cafe24.com:9000</string>
+</dict>
+</plist>

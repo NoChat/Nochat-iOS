@@ -7,6 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B371A521AC530A700D8404D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B371A501AC530A600D8404D /* Default-568h@2x.png */; };
+		0B371A531AC530A700D8404D /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B371A511AC530A700D8404D /* Default@2x.png */; };
+		0B371A551AC530EA00D8404D /* Default@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B371A541AC530EA00D8404D /* Default@3x.png */; };
+		0B371A601AC544CA00D8404D /* User_Property_List.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0B371A5F1AC544CA00D8404D /* User_Property_List.plist */; };
+		0B371A611AC544CA00D8404D /* User_Property_List.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0B371A5F1AC544CA00D8404D /* User_Property_List.plist */; };
+		0B8C26391ABFE864007197ED /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B8C26381ABFE864007197ED /* LoginViewController.m */; };
+		0B8C263C1ABFE87D007197ED /* FriendListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B8C263B1ABFE87D007197ED /* FriendListViewController.m */; };
+		0B9B4EC31ABBFAB000C42C9D /* appicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B9B4EB91ABBFAB000C42C9D /* appicon.png */; };
+		0B9B4EC41ABBFAB000C42C9D /* btn_blue.9.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B9B4EBA1ABBFAB000C42C9D /* btn_blue.9.png */; };
+		0B9B4EC51ABBFAB000C42C9D /* btn_gray.9.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B9B4EBB1ABBFAB000C42C9D /* btn_gray.9.png */; };
+		0B9B4EC61ABBFAB000C42C9D /* btn_invite.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B9B4EBC1ABBFAB000C42C9D /* btn_invite.png */; };
+		0B9B4EC71ABBFAB000C42C9D /* icon_arrow_down.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B9B4EBD1ABBFAB000C42C9D /* icon_arrow_down.png */; };
+		0B9B4EC81ABBFAB000C42C9D /* icon_back.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B9B4EBE1ABBFAB000C42C9D /* icon_back.png */; };
+		0B9B4EC91ABBFAB000C42C9D /* logo_nochat.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B9B4EBF1ABBFAB000C42C9D /* logo_nochat.png */; };
+		0B9B4ECA1ABBFAB000C42C9D /* nav_bar.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B9B4EC01ABBFAB000C42C9D /* nav_bar.png */; };
+		0B9B4ECB1ABBFAB000C42C9D /* popup_item.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B9B4EC11ABBFAB000C42C9D /* popup_item.png */; };
+		0B9B4ECC1ABBFAB000C42C9D /* splash_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B9B4EC21ABBFAB000C42C9D /* splash_bg.png */; };
+		0B9B4ECE1ABBFD9200C42C9D /* BM-HANNA.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0B9B4ECD1ABBFD9200C42C9D /* BM-HANNA.otf */; };
+		0B9B4ED21ABC005C00C42C9D /* DSNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B9B4ED11ABC005C00C42C9D /* DSNavigationBar.m */; };
+		0B9B4ED41ABC10BF00C42C9D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B9B4ED31ABC10BF00C42C9D /* QuartzCore.framework */; };
+		0B9B4ED71ABFE3C100C42C9D /* LogOutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B9B4ED61ABFE3C100C42C9D /* LogOutViewController.m */; };
+		0B9B4EDA1ABFE7AA00C42C9D /* IDPWDEnterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B9B4ED91ABFE7AA00C42C9D /* IDPWDEnterViewController.m */; };
+		0B9B4EDD1ABFE7EE00C42C9D /* AuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B9B4EDC1ABFE7EE00C42C9D /* AuthViewController.m */; };
+		0B9B4EE01ABFE80700C42C9D /* AuthNumEnterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B9B4EDF1ABFE80700C42C9D /* AuthNumEnterViewController.m */; };
+		0BEBA51C1ACE6E1100A5FD8A /* NameTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BEBA51B1ACE6E1100A5FD8A /* NameTableViewCell.m */; };
 		13EEBE6D4A2F45289BADF12D /* libPods-nochat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D6572F0DAC174AA0BC505D1B /* libPods-nochat.a */; };
 		CD7FB7601A9B99B200F2B168 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7FB75F1A9B99B200F2B168 /* main.m */; };
 		CD7FB7631A9B99B200F2B168 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7FB7621A9B99B200F2B168 /* AppDelegate.m */; };
@@ -31,7 +56,40 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8E6A08917BF5470BBC0AA137 /* Pods-nochat.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nochat.xcconfig"; path = "Pods/Pods-nochat.xcconfig"; sourceTree = "<group>"; };
+		0B371A501AC530A600D8404D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = SOURCE_ROOT; };
+		0B371A511AC530A700D8404D /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = SOURCE_ROOT; };
+		0B371A541AC530EA00D8404D /* Default@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@3x.png"; sourceTree = SOURCE_ROOT; };
+		0B371A5F1AC544CA00D8404D /* User_Property_List.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = User_Property_List.plist; sourceTree = "<group>"; };
+		0B8C26371ABFE864007197ED /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		0B8C26381ABFE864007197ED /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		0B8C263A1ABFE87D007197ED /* FriendListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendListViewController.h; sourceTree = "<group>"; };
+		0B8C263B1ABFE87D007197ED /* FriendListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendListViewController.m; sourceTree = "<group>"; };
+		0B9B4EB91ABBFAB000C42C9D /* appicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appicon.png; sourceTree = "<group>"; };
+		0B9B4EBA1ABBFAB000C42C9D /* btn_blue.9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_blue.9.png; sourceTree = "<group>"; };
+		0B9B4EBB1ABBFAB000C42C9D /* btn_gray.9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_gray.9.png; sourceTree = "<group>"; };
+		0B9B4EBC1ABBFAB000C42C9D /* btn_invite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_invite.png; sourceTree = "<group>"; };
+		0B9B4EBD1ABBFAB000C42C9D /* icon_arrow_down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_arrow_down.png; sourceTree = "<group>"; };
+		0B9B4EBE1ABBFAB000C42C9D /* icon_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_back.png; sourceTree = "<group>"; };
+		0B9B4EBF1ABBFAB000C42C9D /* logo_nochat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_nochat.png; sourceTree = "<group>"; };
+		0B9B4EC01ABBFAB000C42C9D /* nav_bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nav_bar.png; sourceTree = "<group>"; };
+		0B9B4EC11ABBFAB000C42C9D /* popup_item.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = popup_item.png; sourceTree = "<group>"; };
+		0B9B4EC21ABBFAB000C42C9D /* splash_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash_bg.png; sourceTree = "<group>"; };
+		0B9B4ECD1ABBFD9200C42C9D /* BM-HANNA.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BM-HANNA.otf"; sourceTree = "<group>"; };
+		0B9B4ED01ABC005B00C42C9D /* DSNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSNavigationBar.h; sourceTree = "<group>"; };
+		0B9B4ED11ABC005C00C42C9D /* DSNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSNavigationBar.m; sourceTree = "<group>"; };
+		0B9B4ED31ABC10BF00C42C9D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		0B9B4ED51ABFE3C100C42C9D /* LogOutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogOutViewController.h; sourceTree = "<group>"; };
+		0B9B4ED61ABFE3C100C42C9D /* LogOutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogOutViewController.m; sourceTree = "<group>"; };
+		0B9B4ED81ABFE7AA00C42C9D /* IDPWDEnterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDPWDEnterViewController.h; sourceTree = "<group>"; };
+		0B9B4ED91ABFE7AA00C42C9D /* IDPWDEnterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDPWDEnterViewController.m; sourceTree = "<group>"; };
+		0B9B4EDB1ABFE7EE00C42C9D /* AuthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthViewController.h; sourceTree = "<group>"; };
+		0B9B4EDC1ABFE7EE00C42C9D /* AuthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthViewController.m; sourceTree = "<group>"; };
+		0B9B4EDE1ABFE80700C42C9D /* AuthNumEnterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthNumEnterViewController.h; sourceTree = "<group>"; };
+		0B9B4EDF1ABFE80700C42C9D /* AuthNumEnterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthNumEnterViewController.m; sourceTree = "<group>"; };
+		0BEBA51A1ACE6E1100A5FD8A /* NameTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NameTableViewCell.h; sourceTree = "<group>"; };
+		0BEBA51B1ACE6E1100A5FD8A /* NameTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NameTableViewCell.m; sourceTree = "<group>"; };
+		22DA311B829229D54B48FFF3 /* Pods-nochat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nochat.release.xcconfig"; path = "Pods/Target Support Files/Pods-nochat/Pods-nochat.release.xcconfig"; sourceTree = "<group>"; };
+		B180631605E926436483B106 /* Pods-nochat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nochat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-nochat/Pods-nochat.debug.xcconfig"; sourceTree = "<group>"; };
 		CD7FB75A1A9B99B200F2B168 /* nochat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nochat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD7FB75E1A9B99B200F2B168 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD7FB75F1A9B99B200F2B168 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -57,6 +115,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B9B4ED41ABC10BF00C42C9D /* QuartzCore.framework in Frameworks */,
 				13EEBE6D4A2F45289BADF12D /* libPods-nochat.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -71,9 +130,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B9B4EB81ABBFAB000C42C9D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0B371A541AC530EA00D8404D /* Default@3x.png */,
+				0B371A501AC530A600D8404D /* Default-568h@2x.png */,
+				0B371A511AC530A700D8404D /* Default@2x.png */,
+				0B9B4ECD1ABBFD9200C42C9D /* BM-HANNA.otf */,
+				0B9B4EB91ABBFAB000C42C9D /* appicon.png */,
+				0B9B4EBA1ABBFAB000C42C9D /* btn_blue.9.png */,
+				0B9B4EBB1ABBFAB000C42C9D /* btn_gray.9.png */,
+				0B9B4EBC1ABBFAB000C42C9D /* btn_invite.png */,
+				0B9B4EBD1ABBFAB000C42C9D /* icon_arrow_down.png */,
+				0B9B4EBE1ABBFAB000C42C9D /* icon_back.png */,
+				0B9B4EBF1ABBFAB000C42C9D /* logo_nochat.png */,
+				0B9B4EC01ABBFAB000C42C9D /* nav_bar.png */,
+				0B9B4EC11ABBFAB000C42C9D /* popup_item.png */,
+				0B9B4EC21ABBFAB000C42C9D /* splash_bg.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0B9B4ECF1ABC005B00C42C9D /* API */ = {
+			isa = PBXGroup;
+			children = (
+				0B9B4ED01ABC005B00C42C9D /* DSNavigationBar.h */,
+				0B9B4ED11ABC005C00C42C9D /* DSNavigationBar.m */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		774DFDC9F3658275AEED6818 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B180631605E926436483B106 /* Pods-nochat.debug.xcconfig */,
+				22DA311B829229D54B48FFF3 /* Pods-nochat.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		9AA5C4D0CB9F4667AE6C3B35 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0B9B4ED31ABC10BF00C42C9D /* QuartzCore.framework */,
 				D6572F0DAC174AA0BC505D1B /* libPods-nochat.a */,
 			);
 			name = Frameworks;
@@ -85,8 +184,8 @@
 				CD7FB75C1A9B99B200F2B168 /* nochat */,
 				CD7FB7791A9B99B200F2B168 /* nochatTests */,
 				CD7FB75B1A9B99B200F2B168 /* Products */,
-				8E6A08917BF5470BBC0AA137 /* Pods-nochat.xcconfig */,
 				9AA5C4D0CB9F4667AE6C3B35 /* Frameworks */,
+				774DFDC9F3658275AEED6818 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,6 +201,8 @@
 		CD7FB75C1A9B99B200F2B168 /* nochat */ = {
 			isa = PBXGroup;
 			children = (
+				0B9B4ECF1ABC005B00C42C9D /* API */,
+				0B9B4EB81ABBFAB000C42C9D /* Resources */,
 				CDF788751A9D8BD500A3AB7E /* Vendor */,
 				CD7FB7611A9B99B200F2B168 /* AppDelegate.h */,
 				CD7FB7621A9B99B200F2B168 /* AppDelegate.m */,
@@ -112,6 +213,21 @@
 				CD7FB76F1A9B99B200F2B168 /* LaunchScreen.xib */,
 				CD7FB7641A9B99B200F2B168 /* nochat.xcdatamodeld */,
 				CD7FB75D1A9B99B200F2B168 /* Supporting Files */,
+				0B9B4ED51ABFE3C100C42C9D /* LogOutViewController.h */,
+				0B9B4ED61ABFE3C100C42C9D /* LogOutViewController.m */,
+				0B9B4ED81ABFE7AA00C42C9D /* IDPWDEnterViewController.h */,
+				0B9B4ED91ABFE7AA00C42C9D /* IDPWDEnterViewController.m */,
+				0B9B4EDB1ABFE7EE00C42C9D /* AuthViewController.h */,
+				0B9B4EDC1ABFE7EE00C42C9D /* AuthViewController.m */,
+				0B9B4EDE1ABFE80700C42C9D /* AuthNumEnterViewController.h */,
+				0B9B4EDF1ABFE80700C42C9D /* AuthNumEnterViewController.m */,
+				0B8C26371ABFE864007197ED /* LoginViewController.h */,
+				0B8C26381ABFE864007197ED /* LoginViewController.m */,
+				0B8C263A1ABFE87D007197ED /* FriendListViewController.h */,
+				0B8C263B1ABFE87D007197ED /* FriendListViewController.m */,
+				0B371A5F1AC544CA00D8404D /* User_Property_List.plist */,
+				0BEBA51A1ACE6E1100A5FD8A /* NameTableViewCell.h */,
+				0BEBA51B1ACE6E1100A5FD8A /* NameTableViewCell.m */,
 			);
 			path = nochat;
 			sourceTree = "<group>";
@@ -211,11 +327,11 @@
 				TargetAttributes = {
 					CD7FB7591A9B99B200F2B168 = {
 						CreatedOnToolsVersion = 6.1.1;
-						DevelopmentTeam = 78QXHXWZPW;
+						DevelopmentTeam = 3DPPXS9XMF;
 					};
 					CD7FB7751A9B99B200F2B168 = {
 						CreatedOnToolsVersion = 6.1.1;
-						DevelopmentTeam = 78QXHXWZPW;
+						DevelopmentTeam = 67WP3936TB;
 						TestTargetID = CD7FB7591A9B99B200F2B168;
 					};
 				};
@@ -244,10 +360,25 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B9B4ECB1ABBFAB000C42C9D /* popup_item.png in Resources */,
+				0B9B4EC31ABBFAB000C42C9D /* appicon.png in Resources */,
+				0B9B4EC41ABBFAB000C42C9D /* btn_blue.9.png in Resources */,
+				0B9B4EC91ABBFAB000C42C9D /* logo_nochat.png in Resources */,
+				0B9B4EC51ABBFAB000C42C9D /* btn_gray.9.png in Resources */,
+				0B9B4EC81ABBFAB000C42C9D /* icon_back.png in Resources */,
+				0B9B4ECE1ABBFD9200C42C9D /* BM-HANNA.otf in Resources */,
+				0B371A601AC544CA00D8404D /* User_Property_List.plist in Resources */,
+				0B371A521AC530A700D8404D /* Default-568h@2x.png in Resources */,
+				0B9B4EC61ABBFAB000C42C9D /* btn_invite.png in Resources */,
+				0B9B4ECC1ABBFAB000C42C9D /* splash_bg.png in Resources */,
 				CDF7887B1A9D8BD500A3AB7E /* AGPushNoteView.xib in Resources */,
+				0B371A531AC530A700D8404D /* Default@2x.png in Resources */,
 				CD7FB76C1A9B99B200F2B168 /* Main.storyboard in Resources */,
+				0B9B4EC71ABBFAB000C42C9D /* icon_arrow_down.png in Resources */,
 				CD7FB7711A9B99B200F2B168 /* LaunchScreen.xib in Resources */,
 				CD7FB76E1A9B99B200F2B168 /* Images.xcassets in Resources */,
+				0B9B4ECA1ABBFAB000C42C9D /* nav_bar.png in Resources */,
+				0B371A551AC530EA00D8404D /* Default@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,6 +386,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B371A611AC544CA00D8404D /* User_Property_List.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +405,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-nochat-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-nochat/Pods-nochat-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FB016B11BC804FFF87F590B1 /* Check Pods Manifest.lock */ = {
@@ -298,10 +430,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B8C263C1ABFE87D007197ED /* FriendListViewController.m in Sources */,
+				0B9B4ED21ABC005C00C42C9D /* DSNavigationBar.m in Sources */,
 				CD7FB7661A9B99B200F2B168 /* nochat.xcdatamodeld in Sources */,
+				0B9B4EDA1ABFE7AA00C42C9D /* IDPWDEnterViewController.m in Sources */,
 				CD7FB7631A9B99B200F2B168 /* AppDelegate.m in Sources */,
+				0B9B4EE01ABFE80700C42C9D /* AuthNumEnterViewController.m in Sources */,
+				0B9B4EDD1ABFE7EE00C42C9D /* AuthViewController.m in Sources */,
 				CD7FB7691A9B99B200F2B168 /* ViewController.m in Sources */,
+				0BEBA51C1ACE6E1100A5FD8A /* NameTableViewCell.m in Sources */,
 				CD7FB7601A9B99B200F2B168 /* main.m in Sources */,
+				0B9B4ED71ABFE3C100C42C9D /* LogOutViewController.m in Sources */,
+				0B8C26391ABFE864007197ED /* LoginViewController.m in Sources */,
 				CDF7887A1A9D8BD500A3AB7E /* AGPushNoteView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -426,27 +566,31 @@
 		};
 		CD7FB7811A9B99B200F2B168 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8E6A08917BF5470BBC0AA137 /* Pods-nochat.xcconfig */;
+			baseConfigurationReference = B180631605E926436483B106 /* Pods-nochat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Ju Young Hong (CX2B64UU5J)";
 				INFOPLIST_FILE = nochat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "6c3f0be5-1aa4-48b3-9752-161e6ffb3d03";
+				PROVISIONING_PROFILE = "ed4494ea-27b8-4d55-8f1d-8c6ab08b46f0";
 			};
 			name = Debug;
 		};
 		CD7FB7821A9B99B200F2B168 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8E6A08917BF5470BBC0AA137 /* Pods-nochat.xcconfig */;
+			baseConfigurationReference = 22DA311B829229D54B48FFF3 /* Pods-nochat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Ju Young Hong (CX2B64UU5J)";
 				INFOPLIST_FILE = nochat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "6c3f0be5-1aa4-48b3-9752-161e6ffb3d03";
+				PROVISIONING_PROFILE = "ed4494ea-27b8-4d55-8f1d-8c6ab08b46f0";
 			};
 			name = Release;
 		};

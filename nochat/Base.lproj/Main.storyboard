@@ -1,27 +1,479 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Nkd-8T-G4s">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="BM-HANNA.otf">
+            <string>BM-HANNAStd</string>
+            <string>BM-HANNAStd</string>
+            <string>BM-HANNAStd</string>
+            <string>BM-HANNAStd</string>
+            <string>BM-HANNAStd</string>
+            <string>BM-HANNAStd</string>
+            <string>BM-HANNAStd</string>
+            <string>BM-HANNAStd</string>
+            <string>BM-HANNAStd</string>
+            <string>BM-HANNAStd</string>
+            <string>BM-HANNAStd</string>
+            <string>BM-HANNAStd</string>
+            <string>BM-HANNAStd</string>
+            <string>BM-HANNAStd</string>
+            <string>BM-HANNAStd</string>
+            <string>BM-HANNAStd</string>
+            <string>BM-HANNAStd</string>
+            <string>BM-HANNAStd</string>
+            <string>BM-HANNAStd</string>
+            <string>BM-HANNAStd</string>
+            <string>BM-HANNAStd</string>
+            <string>BM-HANNAStd</string>
+            <string>BM-HANNAStd</string>
+            <string>BM-HANNAStd</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Log Out View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LogOutViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="atG-Gg-fhu"/>
+                        <viewControllerLayoutGuide type="bottom" id="KcO-Ap-8nk"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="splash_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="OlQ-Xi-dKk">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="친구끼리 무슨 말이 필요해?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="awd-ZZ-UAE">
+                                <rect key="frame" x="0.0" y="180" width="324" height="21"/>
+                                <fontDescription key="fontDescription" name="BM-HANNAStd" family="BM-HANNAStd_OTF" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo_nochat.png" translatesAutoresizingMaskIntoConstraints="NO" id="tlD-tZ-6Bj">
+                                <rect key="frame" x="52" y="209" width="224" height="43"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zq2-AA-0UR">
+                                <rect key="frame" x="39" y="419" width="247" height="49"/>
+                                <color key="backgroundColor" red="0.0" green="0.75686281919999998" blue="0.88627457620000005" alpha="1" colorSpace="deviceRGB"/>
+                                <fontDescription key="fontDescription" name="BM-HANNAStd" family="BM-HANNAStd_OTF" pointSize="29"/>
+                                <color key="tintColor" red="0.0" green="0.58039218189999997" blue="0.84705889229999998" alpha="1" colorSpace="deviceRGB"/>
+                                <size key="titleShadowOffset" width="0.0" height="2"/>
+                                <state key="normal" title="노챗 가입하기">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.58039218189999997" blue="0.84705889229999998" alpha="1" colorSpace="deviceRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="hig-A7-410" kind="push" identifier="segue_SignUp" id="XUf-su-VUX"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="이미 가입했다면?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PCS-BT-icK">
+                                <rect key="frame" x="75" y="481" width="124" height="19"/>
+                                <fontDescription key="fontDescription" name="BM-HANNAStd" family="BM-HANNAStd_OTF" pointSize="16"/>
+                                <color key="textColor" red="0.50196081400000003" green="0.31764706970000001" blue="0.062745101750000004" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Olw-6H-LaY">
+                                <rect key="frame" x="192" y="476" width="46" height="30"/>
+                                <fontDescription key="fontDescription" name="BM-HANNAStd" family="BM-HANNAStd_OTF" pointSize="16"/>
+                                <state key="normal" title="로그인">
+                                    <color key="titleColor" red="0.50196081400000003" green="0.31764706970000001" blue="0.062745101750000004" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="titleShadowColor" red="0.92941182851791382" green="0.92941182851791382" blue="0.92941182851791382" alpha="0.0" colorSpace="deviceRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="55p-Ye-pSQ" kind="push" identifier="segue_SignIn" id="S8X-wF-UPP"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="JAt-wn-x7B"/>
+                    <connections>
+                        <outlet property="btn_SignIn" destination="Olw-6H-LaY" id="1rm-8Z-CD7"/>
+                        <outlet property="btn_SignUp" destination="zq2-AA-0UR" id="OPD-Gu-31f"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.06666666666666" y="194.06666666666666"/>
+            <point key="canvasLocation" x="-825" y="-732"/>
+        </scene>
+        <!--Enter View Controller-->
+        <scene sceneID="zJi-PO-uiQ">
+            <objects>
+                <viewController id="hig-A7-410" customClass="IDPWDEnterViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gcz-CF-JtC"/>
+                        <viewControllerLayoutGuide type="bottom" id="wE3-Qu-k8W"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="421-EZ-A9K">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="친구끼리 말이 필요해?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uAW-YT-y5e">
+                                <rect key="frame" x="0.0" y="105" width="320" height="21"/>
+                                <fontDescription key="fontDescription" name="BM-HANNAStd" family="BM-HANNAStd_OTF" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="간단한 가입으로 친구와 의사소통하세요" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HmV-em-4cf">
+                                <rect key="frame" x="0.0" y="127" width="320" height="21"/>
+                                <fontDescription key="fontDescription" name="BM-HANNAStd" family="BM-HANNAStd_OTF" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hbV-AW-R5N">
+                                <rect key="frame" x="18" y="331" width="286" height="52"/>
+                                <color key="backgroundColor" red="0.6784313917" green="0.6784313917" blue="0.6784313917" alpha="1" colorSpace="deviceRGB"/>
+                                <fontDescription key="fontDescription" name="BM-HANNAStd" family="BM-HANNAStd_OTF" pointSize="29"/>
+                                <color key="tintColor" red="0.0" green="0.58039218189999997" blue="0.84705889229999998" alpha="1" colorSpace="deviceRGB"/>
+                                <size key="titleShadowOffset" width="0.0" height="2"/>
+                                <state key="normal" title="확인">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.46666669849999998" green="0.46666669849999998" blue="0.46666669849999998" alpha="1" colorSpace="deviceRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="action_Enter:" destination="hig-A7-410" eventType="touchUpInside" id="Io8-j1-qiV"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="아이디 입력" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vm3-AU-VD7">
+                                <rect key="frame" x="18" y="202" width="285" height="49"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="0.6784313917" green="0.6784313917" blue="0.6784313917" alpha="1" colorSpace="deviceRGB"/>
+                                <fontDescription key="fontDescription" name="BM-HANNAStd" family="BM-HANNAStd_OTF" pointSize="21"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="hig-A7-410" id="fLc-ue-3dR"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="비밀번호 입력" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fTr-Em-k3L">
+                                <rect key="frame" x="18" y="251" width="285" height="48"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="0.6784313917" green="0.6784313917" blue="0.6784313917" alpha="1" colorSpace="deviceRGB"/>
+                                <fontDescription key="fontDescription" name="BM-HANNAStd" family="BM-HANNAStd_OTF" pointSize="21"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="hig-A7-410" id="Hr4-Xu-4gO"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.231372565" green="0.231372565" blue="0.22352942819999999" alpha="1" colorSpace="deviceRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="rgw-QO-bQ3"/>
+                    <connections>
+                        <outlet property="btn_Enter" destination="hbV-AW-R5N" id="aHF-6R-1m9"/>
+                        <outlet property="text_ID" destination="vm3-AU-VD7" id="91c-mD-Fic"/>
+                        <outlet property="text_PWD" destination="fTr-Em-k3L" id="pWC-R2-0dw"/>
+                        <segue destination="tjg-yU-rVS" kind="push" identifier="segueToNext" id="k27-Ki-TBo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V80-LZ-1UH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-321" y="-1327"/>
+        </scene>
+        <!--Friend List View Controller-->
+        <scene sceneID="gVo-mD-wQc">
+            <objects>
+                <viewController id="NsH-3Q-fwL" customClass="FriendListViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LBU-xQ-cFz"/>
+                        <viewControllerLayoutGuide type="bottom" id="B1z-9g-2Ex"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jxn-Zm-odb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="singleLineEtched" rowHeight="72" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="7kl-Pv-WmT">
+                                <rect key="frame" x="0.0" y="6" width="320" height="562"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="separatorColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexBackgroundColor" red="0.22745099663734436" green="0.22745099663734436" blue="0.21960785984992981" alpha="1" colorSpace="deviceRGB"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="72" id="787-RW-I4V">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="787-RW-I4V" id="fhu-dn-Ve8">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="iEq-27-9AA">
+                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="72"/>
+                                                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" name="BM-HANNAStd" family="BM-HANNAStd_OTF" pointSize="27"/>
+                                                    <state key="normal" title="이름">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.22745099660000001" green="0.22745099660000001" blue="0.2196078598" alpha="1" colorSpace="deviceRGB"/>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="haU-4L-mvq">
+                                <rect key="frame" x="0.0" y="508" width="160" height="60"/>
+                                <color key="backgroundColor" red="1" green="0.77254909279999995" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                <fontDescription key="fontDescription" name="BM-HANNAStd" family="BM-HANNAStd_OTF" pointSize="22"/>
+                                <state key="normal" title="초대">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="zB5-0G-xal">
+                                <rect key="frame" x="160" y="508" width="160" height="60"/>
+                                <color key="backgroundColor" red="0.0" green="0.75686281919999998" blue="0.88627457620000005" alpha="1" colorSpace="deviceRGB"/>
+                                <fontDescription key="fontDescription" name="BM-HANNAStd" family="BM-HANNAStd_OTF" pointSize="20"/>
+                                <state key="normal">
+                                    <string key="title">  친한친구들에게 
+        보내기</string>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nav_bar.png" translatesAutoresizingMaskIntoConstraints="NO" id="3CX-DU-Gs6">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="84"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo_nochat.png" translatesAutoresizingMaskIntoConstraints="NO" id="iBy-np-okT">
+                                <rect key="frame" x="108" y="38" width="111" height="21"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.23137256503105164" green="0.23137256503105164" blue="0.22352942824363708" alpha="1" colorSpace="deviceRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="lF5-GH-vir"/>
+                    <connections>
+                        <outlet property="btn_InviteFriend" destination="haU-4L-mvq" id="XOi-G5-5KZ"/>
+                        <outlet property="btn_SendToBF" destination="zB5-0G-xal" id="Yin-OK-IH6"/>
+                        <outlet property="tableView" destination="7kl-Pv-WmT" id="V7l-R3-lOm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OA1-Lw-hnw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="483" y="-527"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="G37-ub-ndy">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Nkd-8T-G4s" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nWR-Pp-dK5" customClass="DSNavigationBar">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="csS-sA-Yvv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JhH-9A-j7u" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1297" y="-732"/>
+        </scene>
+        <!--Auth View Controller-->
+        <scene sceneID="kSD-Tk-AV9">
+            <objects>
+                <viewController id="tjg-yU-rVS" customClass="AuthViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XfQ-f7-FI0"/>
+                        <viewControllerLayoutGuide type="bottom" id="FIi-OO-PEB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mac-dj-7jJ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="휴대폰 번호 인증을 통해" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2wG-lf-kDv">
+                                <rect key="frame" x="0.0" y="105" width="320" height="21"/>
+                                <fontDescription key="fontDescription" name="BM-HANNAStd" family="BM-HANNAStd_OTF" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="연락처의 친구들을 찾아보세요" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ADb-Pq-W6a">
+                                <rect key="frame" x="0.0" y="127" width="320" height="21"/>
+                                <fontDescription key="fontDescription" name="BM-HANNAStd" family="BM-HANNAStd_OTF" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="휴대폰 번호 입력" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="m0w-DM-vNk">
+                                <rect key="frame" x="18" y="202" width="285" height="49"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="0.6784313917" green="0.6784313917" blue="0.6784313917" alpha="1" colorSpace="deviceRGB"/>
+                                <fontDescription key="fontDescription" name="BM-HANNAStd" family="BM-HANNAStd_OTF" pointSize="21"/>
+                                <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                                <connections>
+                                    <outlet property="delegate" destination="tjg-yU-rVS" id="W4X-L4-5Qr"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eT0-Hb-SAx">
+                                <rect key="frame" x="16" y="279" width="286" height="52"/>
+                                <color key="backgroundColor" red="0.0" green="0.75686281919999998" blue="0.88627457620000005" alpha="1" colorSpace="deviceRGB"/>
+                                <fontDescription key="fontDescription" name="BM-HANNAStd" family="BM-HANNAStd_OTF" pointSize="29"/>
+                                <color key="tintColor" red="0.0" green="0.58039218189999997" blue="0.84705889229999998" alpha="1" colorSpace="deviceRGB"/>
+                                <size key="titleShadowOffset" width="0.0" height="2"/>
+                                <state key="normal" title="인증번호 전송">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.58039218189999997" blue="0.84705889229999998" alpha="1" colorSpace="deviceRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="action_Enter:" destination="tjg-yU-rVS" eventType="touchUpInside" id="uAx-7F-B8C"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.231372565" green="0.231372565" blue="0.22352942819999999" alpha="1" colorSpace="deviceRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="HZZ-nw-DiA"/>
+                    <connections>
+                        <outlet property="btn_AuthRequest" destination="eT0-Hb-SAx" id="Lcm-wD-fsz"/>
+                        <outlet property="text_PhoneNum" destination="m0w-DM-vNk" id="SyH-Jb-8RR"/>
+                        <segue destination="bz6-sG-Jmn" kind="push" identifier="segueToNext" id="GA2-zD-nl4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kU9-Jb-yAx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="83" y="-1327"/>
+        </scene>
+        <!--Auth Num Enter View Controller-->
+        <scene sceneID="Ct2-rx-TDx">
+            <objects>
+                <viewController id="bz6-sG-Jmn" customClass="AuthNumEnterViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xf5-X6-6Ch"/>
+                        <viewControllerLayoutGuide type="bottom" id="VO2-ba-X8Q"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nh2-jY-Uwy">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="인증번호를 입력해주세요" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zxB-k1-MXi">
+                                <rect key="frame" x="0.0" y="113" width="320" height="21"/>
+                                <fontDescription key="fontDescription" name="BM-HANNAStd" family="BM-HANNAStd_OTF" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="인증번호 입력" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="81Z-2D-qxX">
+                                <rect key="frame" x="18" y="202" width="285" height="49"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="0.6784313917" green="0.6784313917" blue="0.6784313917" alpha="1" colorSpace="deviceRGB"/>
+                                <fontDescription key="fontDescription" name="BM-HANNAStd" family="BM-HANNAStd_OTF" pointSize="21"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <outlet property="delegate" destination="bz6-sG-Jmn" id="vZM-dG-awr"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H6V-nw-dQS">
+                                <rect key="frame" x="16" y="279" width="286" height="52"/>
+                                <color key="backgroundColor" red="0.0" green="0.75686281919999998" blue="0.88627457620000005" alpha="1" colorSpace="deviceRGB"/>
+                                <fontDescription key="fontDescription" name="BM-HANNAStd" family="BM-HANNAStd_OTF" pointSize="29"/>
+                                <color key="tintColor" red="0.0" green="0.58039218189999997" blue="0.84705889229999998" alpha="1" colorSpace="deviceRGB"/>
+                                <size key="titleShadowOffset" width="0.0" height="2"/>
+                                <state key="normal" title="노챗 시작하기">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.58039218189999997" blue="0.84705889229999998" alpha="1" colorSpace="deviceRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="action_start:" destination="bz6-sG-Jmn" eventType="touchUpInside" id="XaZ-sA-k7l"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.231372565" green="0.231372565" blue="0.22352942819999999" alpha="1" colorSpace="deviceRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="TM6-Sw-bV9"/>
+                    <connections>
+                        <outlet property="btn_NochatStart" destination="H6V-nw-dQS" id="d85-zn-SKp"/>
+                        <outlet property="text_AuthNum" destination="81Z-2D-qxX" id="Nad-q1-ua1"/>
+                        <segue destination="NsH-3Q-fwL" kind="push" identifier="segueToNext" id="4w5-Cm-d94"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Re8-ci-A0k" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="483" y="-1327"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="OJA-2f-9VJ">
+            <objects>
+                <viewController id="55p-Ye-pSQ" customClass="LoginViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iO3-ni-2YS"/>
+                        <viewControllerLayoutGuide type="bottom" id="QF1-vk-rWE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BzK-Xw-tP6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="친구끼리 말이 필요해?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BkW-RO-NbT">
+                                <rect key="frame" x="0.0" y="105" width="320" height="21"/>
+                                <fontDescription key="fontDescription" name="BM-HANNAStd" family="BM-HANNAStd_OTF" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="로그인 후 친구와 의사소통하세요" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gaU-Gx-l7N">
+                                <rect key="frame" x="0.0" y="127" width="320" height="21"/>
+                                <fontDescription key="fontDescription" name="BM-HANNAStd" family="BM-HANNAStd_OTF" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="아이디 입력" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YVf-iA-kmX">
+                                <rect key="frame" x="18" y="202" width="285" height="49"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="0.6784313917" green="0.6784313917" blue="0.6784313917" alpha="1" colorSpace="deviceRGB"/>
+                                <fontDescription key="fontDescription" name="BM-HANNAStd" family="BM-HANNAStd_OTF" pointSize="21"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WAx-iy-hAc">
+                                <rect key="frame" x="18" y="331" width="286" height="52"/>
+                                <color key="backgroundColor" red="0.0" green="0.75686281919999998" blue="0.88627457620000005" alpha="1" colorSpace="deviceRGB"/>
+                                <fontDescription key="fontDescription" name="BM-HANNAStd" family="BM-HANNAStd_OTF" pointSize="29"/>
+                                <color key="tintColor" red="0.0" green="0.58039218189999997" blue="0.84705889229999998" alpha="1" colorSpace="deviceRGB"/>
+                                <size key="titleShadowOffset" width="0.0" height="2"/>
+                                <state key="normal" title="노챗 시작하기">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.58039218189999997" blue="0.84705889229999998" alpha="1" colorSpace="deviceRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="action_start:" destination="55p-Ye-pSQ" eventType="touchUpInside" id="Nrp-kJ-3iC"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="비밀번호 입력" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xeu-lx-2U4">
+                                <rect key="frame" x="18" y="251" width="285" height="48"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="0.6784313917" green="0.6784313917" blue="0.6784313917" alpha="1" colorSpace="deviceRGB"/>
+                                <fontDescription key="fontDescription" name="BM-HANNAStd" family="BM-HANNAStd_OTF" pointSize="21"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="next" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.231372565" green="0.231372565" blue="0.22352942819999999" alpha="1" colorSpace="deviceRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="SnU-6o-0nJ"/>
+                    <connections>
+                        <outlet property="btn_NochatStart" destination="WAx-iy-hAc" id="anr-7e-uqy"/>
+                        <outlet property="text_ID" destination="YVf-iA-kmX" id="oTH-vf-fGL"/>
+                        <outlet property="text_PWD" destination="xeu-lx-2U4" id="b67-pQ-q5h"/>
+                        <segue destination="NsH-3Q-fwL" kind="modal" identifier="segueToNext" id="25C-JC-sYS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L3J-FH-QYA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-321" y="-523"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="logo_nochat.png" width="642" height="129"/>
+        <image name="nav_bar.png" width="1080" height="190"/>
+        <image name="splash_bg.png" width="1080" height="1845"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="4w5-Cm-d94"/>
+    </inferredMetricsTieBreakers>
+    <color key="tintColor" red="0.0084103954081632404" green="0.0084103954081632404" blue="0.0084103954081632404" alpha="1" colorSpace="calibratedRGB"/>
 </document>

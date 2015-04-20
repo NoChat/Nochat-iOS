@@ -84,8 +84,41 @@
     //NSString *appName = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleDisplayName"];
     //NSString *appVersion = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"];
     
+    
+    //device token
     NSString *devToken = [[[[deviceToken description] stringByReplacingOccurrencesOfString:@"<" withString:@""] stringByReplacingOccurrencesOfString:@">" withString:@""] stringByReplacingOccurrencesOfString:@" " withString:@""];
-    NSLog(@"DEVICE TOKEN : %@", devToken);
+   // NSLog(@"DEVICE TOKEN : %@", devToken);
+    
+    //server url
+    NSString *serverURL = @"http://todaytrend.cafe24.com:9000";
+    
+    
+    //save to plist
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths objectAtIndex:0];
+    NSString *finalPath = [documentsDirectory stringByAppendingPathComponent:@"User_Property_List.plist"];
+    
+    NSMutableDictionary *mdict = [NSMutableDictionary dictionaryWithContentsOfFile:finalPath];
+    if (mdict == nil) {
+        mdict = [[NSMutableDictionary alloc] init];
+    }
+    
+    [mdict setObject:devToken forKey: @"device_token"];
+    [mdict setObject:serverURL forKey: @"serverURL"];
+
+    [mdict writeToFile:finalPath atomically:YES];
+
+
+    NSMutableDictionary *savedStock = [[NSMutableDictionary alloc] initWithContentsOfFile:finalPath];
+    
+    NSString *device_token = [savedStock objectForKey:@"device_token"];
+    NSString *server_URL = [savedStock objectForKey:@"serverURL"];
+
+    NSLog(@"SAVED DEVICE TOKEN : %@", device_token);
+    NSLog(@"SAVED server_URL : %@", server_URL);
+
+
+    
     
 //#endif
 }
